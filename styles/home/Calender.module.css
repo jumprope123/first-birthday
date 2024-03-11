@@ -1,0 +1,70 @@
+.calenderSection {
+  width: 90%;
+  border: 3px solid pink;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.calenderSection > header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.articleCalender {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.yoil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+
+.articleCalender > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.articleCalender > div:nth-child(13),
+.articleCalender > div:nth-child(20),
+.articleCalender > div:nth-child(27) > div,
+.articleCalender > div:nth-child(34) {
+  z-index: 2;
+  color: blue;
+}
+
+.articleCalender > div:nth-child(14),
+.articleCalender > div:nth-child(21),
+.articleCalender > div:nth-child(28),
+.articleCalender > div:nth-child(35) {
+  z-index: 2;
+  color: red;
+}
+
+.heartImage {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.heartWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.heartWrapper > span {
+  color: black;
+  z-index: 2;
+  font-size: 3vw;
+  font-weight: bold;
+}

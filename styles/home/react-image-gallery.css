@@ -1,0 +1,3 @@
+.image-gallery-thumbnail {
+  object-fit: cover; /* 이미지를 썸네일에 맞게 잘라내는 방식 설정 */
+}

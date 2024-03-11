@@ -1,0 +1,20 @@
+.navigation {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: clamp(16px, 3vw, 24px);
+  background-color: RGB(238, 231, 163, 0.7);
+  margin-top: 20px;
+}
+.navigation > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-weight: bold;
+  border-right: 2px solid pink;
+}
+
+.navigation > div:last-child {
+  border: none;
+}

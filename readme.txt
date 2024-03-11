@@ -1,3 +1,16 @@
+yarn create next-app --typescript
+
+yarn eslint --init
+
+.prettierrc 
+{
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "none"
+}
+
+.eslintrc.json
 {
   "env": {
     "browser": true,
@@ -11,7 +24,6 @@
   "plugins": ["react"],
   "rules": {
     "@typescript-eslint/space-before-function-paren": "off",
-    "react/react-in-jsx-scope": "off",
-    "multiline-ternary": "off"
+    "react/react-in-jsx-scope": "off"
   }
 }
