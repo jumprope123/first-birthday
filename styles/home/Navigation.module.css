@@ -2,9 +2,10 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  font-size: 1.2em;
+  font-size: 1em;
   background-color: RGB(238, 231, 163, 0.7);
   margin-top: 40px;
+  color: black;
 }
 .navigation > div {
   display: flex;
