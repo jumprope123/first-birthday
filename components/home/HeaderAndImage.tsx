@@ -3,7 +3,10 @@ import babyIchan from '../../public/babyIchan.jpg'
 const HeaderAndImage = (): JSX.Element => {
   return (
     <>
-      <h1 className={styles.gugiFont}>1st Birthday</h1>
+      <h1 className={styles.headerFont}>
+        <p>1</p>
+        <p>st</p>&nbsp;<span>Birthday</span>
+      </h1>
       <h2 className={styles.subHeader1}>어느덧 1년, 그 특별한 날</h2>
       <h2 className={styles.subHeader2}>
         소중한 분들과 함께 기쁨을 나누고 싶습니다.

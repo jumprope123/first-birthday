@@ -1,8 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
-
-.gugiFont {
-  font-family: 'Gugi', sans-serif;
+.headerFont {
   font-size: 2em;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.headerFont > p:nth-child(1) {
+  font-size: 2em;
+}
+.headerFont > p:nth-child(2) {
+  font-size: 0.6em;
+  margin-top: 20px;
 }
 
 .subHeader1 {
