@@ -8,7 +8,7 @@
 
 .sectionTitle h1 {
   margin-top: 10px;
-  font-size: clamp(14px, 5vw, 40px);
+  font-size: clamp(12px, 5vw, 40px);
   font-weight: bold;
 }
 
@@ -29,7 +29,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+}
+
+.sectionDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .explain section:nth-child(1) {
@@ -37,31 +45,39 @@
 }
 
 .explain section h1 {
-  font-size: clamp(14px, 4vw, 40px);
+  font-size: clamp(12px, 4vw, 30px);
 }
 
 .bus {
   display: flex;
   align-items: center;
-  margin-top: 30px;
-  font-size: clamp(14px, 4vw, 40px);
+  font-size: clamp(12px, 3vw, 24px);
 }
-.bus > p {
+.bus2 {
   padding: 2px 7px;
   background-color: RGB(141, 199, 40);
   color: white;
+  font-size: clamp(12px, 3vw, 24px);
 }
 
 .busDetail {
-  margin-top: 10px;
-  font-size: clamp(14px, 3vw, 40px);
+  margin-top: 20px;
+  font-size: clamp(12px, 3vw, 20px);
 }
 
 .carDetail {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: clamp(14px, 3vw, 40px);
+  font-size: clamp(12px, 3vw, 20px);
   align-items: center;
   margin-top: 30px;
+}
+.carDetail2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: clamp(12px, 3vw, 20px);
+  align-items: center;
+  margin-top: 10px;
 }

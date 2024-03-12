@@ -10,10 +10,10 @@ const Location = (): JSX.Element => {
         <div className={styles.explain}>
           <section>
             <h1>🚌대중교통 이용시🚌</h1>
-            <p className={styles.bus}>
-              <p>마을</p>
-              &nbsp;07, 04, 06, 01-1
-            </p>
+            <div className={styles.sectionDiv}>
+              <p className={styles.bus2}>마을</p>
+              <p className={styles.bus}>&nbsp;07, 04, 06, 01-1</p>
+            </div>
             <p className={styles.busDetail}>
               금천구종합청사.금천구청역 -&gt; 시흥사거리 하차
             </p>
@@ -21,8 +21,11 @@ const Location = (): JSX.Element => {
           <section>
             <h1>🚗자가용 이용시🚗</h1>
             <p className={styles.carDetail}>
-              네비에 서울시 금천구 시흥대로 201 또는 홈플러스 시흥점 검색
-              <p>홈플러스 건물 주차장에 주차 후 7층 마벨리에</p>
+              네비에 서울시 금천구 시흥대로 201 <br />
+              또는 홈플러스 시흥점 검색
+            </p>
+            <p className={styles.carDetail2}>
+              홈플러스 건물 주차장에 주차 후 7층 마벨리에
             </p>
           </section>
         </div>
