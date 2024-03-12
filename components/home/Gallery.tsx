@@ -10,8 +10,25 @@ import Ichan3 from '../../public/gallery/Ichan3.jpg'
 import Ichan4 from '../../public/gallery/Ichan4.jpg'
 import Ichan5 from '../../public/gallery/Ichan5.jpg'
 import Ichan6 from '../../public/gallery/Ichan6.jpg'
+import Ichan7 from '../../public/gallery/Ichan7.jpg'
+import Ichan8 from '../../public/gallery/Ichan8.jpg'
+import Ichan9 from '../../public/gallery/Ichan9.jpg'
+import Ichan10 from '../../public/gallery/Ichan10.jpg'
+import Ichan11 from '../../public/gallery/Ichan11.jpg'
 
-const imageArray = [Ichan1, Ichan2, Ichan3, Ichan4, Ichan5, Ichan6]
+const imageArray = [
+  Ichan1,
+  Ichan2,
+  Ichan3,
+  Ichan4,
+  Ichan5,
+  Ichan6,
+  Ichan7,
+  Ichan8,
+  Ichan9,
+  Ichan10,
+  Ichan11
+]
 
 const Gallery = (): JSX.Element => {
   const [images, setImages] = useState<any[]>([])
