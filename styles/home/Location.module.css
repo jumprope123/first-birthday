@@ -1,10 +1,67 @@
-.wrapper {
-  width: 100%;
+.sectionTitle {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
-}
-.map {
+  align-items: center;
   width: 100%;
+}
+
+.sectionTitle h1 {
+  margin-top: 10px;
+  font-size: clamp(14px, 5vw, 40px);
+  font-weight: bold;
+}
+
+.sectionTitle h2 {
+  margin-top: 10px;
+}
+
+.explain {
+  margin-top: 20px;
+  width: 90%;
   height: 300px;
+  border: 3px dashed pink;
+  border-radius: 10px;
+}
+
+.explain section {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.explain section:nth-child(1) {
+  border-bottom: 2px dashed pink;
+}
+
+.explain section h1 {
+  font-size: clamp(14px, 4vw, 40px);
+}
+
+.bus {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  font-size: clamp(14px, 4vw, 40px);
+}
+.bus > p {
+  padding: 2px 7px;
+  background-color: RGB(141, 199, 40);
+  color: white;
+}
+
+.busDetail {
+  margin-top: 10px;
+  font-size: clamp(14px, 3vw, 40px);
+}
+
+.carDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: clamp(14px, 3vw, 40px);
+  align-items: center;
+  margin-top: 30px;
 }

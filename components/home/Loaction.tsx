@@ -1,59 +1,32 @@
-/* eslint-disable one-var */
-'use client'
-import { useEffect } from 'react'
+import KakaoMap from './KakaoMap'
 import styles from '../../styles/home/Location.module.css'
 const Location = (): JSX.Element => {
-  useEffect(() => {
-    const kakaoMapScript = document.createElement('script')
-    kakaoMapScript.async = false
-    kakaoMapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_API_KEY}&autoload=false`
-    document.head.appendChild(kakaoMapScript)
-
-    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-    const onLoadKakaoAPI = () => {
-      window.kakao.maps.load(() => {
-        const container = document.getElementById('map')
-        const options = {
-          center: new window.kakao.maps.LatLng(37.451973, 126.900731),
-          level: 3
-        }
-
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const map = new window.kakao.maps.Map(container, options)
-
-        // 마커 생성
-        const imageSrc =
-            'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png', // 마커이미지의 주소입니다
-          imageSize = new window.kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
-          imageOption = { offset: new window.kakao.maps.Point(27, 69) } // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-
-        // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-        const markerImage = new window.kakao.maps.MarkerImage(
-            imageSrc,
-            imageSize,
-            imageOption
-          ),
-          markerPosition = new window.kakao.maps.LatLng(37.451973, 126.900731) // 마커가 표시될 위치입니다
-
-        // 마커를 생성합니다
-        const marker = new window.kakao.maps.Marker({
-          position: markerPosition,
-          image: markerImage // 마커이미지 설정
-        })
-
-        // 마커가 지도 위에 표시되도록 설정합니다
-        marker.setMap(map)
-      })
-    }
-
-    kakaoMapScript.addEventListener('load', onLoadKakaoAPI)
-  }, [])
-
   return (
     <>
-      <div className={styles.wrapper}>
-        <div id={'map'} className={styles.map}></div>
-      </div>
+      <KakaoMap />
+      <section className={styles.sectionTitle}>
+        <h1>서울 금천구 시흥대로 201</h1>
+        <h2>금천구청역 1호선에서 (도보15분) 이내</h2>
+        <div className={styles.explain}>
+          <section>
+            <h1>🚌대중교통 이용시🚌</h1>
+            <p className={styles.bus}>
+              <p>마을</p>
+              &nbsp;07, 04, 06, 01-1
+            </p>
+            <p className={styles.busDetail}>
+              금천구종합청사.금천구청역 -&gt; 시흥사거리 하차
+            </p>
+          </section>
+          <section>
+            <h1>🚗자가용 이용시🚗</h1>
+            <p className={styles.carDetail}>
+              네비에 서울시 금천구 시흥대로 201 또는 홈플러스 시흥점 검색
+              <p>홈플러스 건물 주차장에 주차 후 7층 마벨리에</p>
+            </p>
+          </section>
+        </div>
+      </section>
     </>
   )
 }

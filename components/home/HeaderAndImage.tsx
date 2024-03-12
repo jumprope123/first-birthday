@@ -1,5 +1,5 @@
 import styles from '../../styles/home/HeaderAndImage.module.css'
-import babyIchan from '../../public/babyIchan-removebg.png'
+import babyIchan from '../../public/babyIchan.jpg'
 const HeaderAndImage = (): JSX.Element => {
   return (
     <>
