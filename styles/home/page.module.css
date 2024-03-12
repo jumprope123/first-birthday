@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 .container {
   width: 100%;
   min-width: 300px;
   display: flex;
   justify-content: center;
-  font-size: clamp(12px, 5vw, 30px);
+  font-size: clamp(25px, 5vw, 35px);
+  font-family: 'Nanum Pen Script';
 }
 
 .wrapper {
@@ -21,4 +24,7 @@
   padding-top: 40px;
   display: flex;
   justify-content: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: blueviolet;
 }

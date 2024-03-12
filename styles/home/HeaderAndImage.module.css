@@ -2,7 +2,7 @@
 
 .gugiFont {
   font-family: 'Gugi', sans-serif;
-  font-size: clamp(16px, 8vw, 60px);
+  font-size: 2em;
 }
 
 .subHeader1 {
@@ -19,11 +19,22 @@
 
 .name {
   margin-top: 20px;
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
 .parents {
   display: flex;
   margin-top: 10px;
+}
+
+.parents > h3 {
+  font-size: 1.2em;
+}
+.parents > h4 {
+  font-size: 1.2em;
+  color: black;
+  font-weight: bold;
 }
 
 .place {

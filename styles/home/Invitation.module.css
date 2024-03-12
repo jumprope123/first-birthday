@@ -3,5 +3,5 @@
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  font-size: clamp(14px, 4vw, 24px);
+  font-size: 1em;
 }

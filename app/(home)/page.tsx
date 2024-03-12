@@ -35,12 +35,18 @@ export default function Home(): JSX.Element {
       <div className={styles.wrapper}>
         <HeaderAndImage />
         <Navigation />
-        <p className={styles.title}>INVITAION</p>
+        <p className={styles.title} id="invitation">
+          INVITAION
+        </p>
         <Invitation />
         <Calender />
-        <p className={styles.title}>GALLERY</p>
+        <p className={styles.title} id="gallery">
+          GALLERY
+        </p>
         <Gallery />
-        <p className={styles.title}>LOCATION</p>
+        <p className={styles.title} id="location">
+          LOCATION
+        </p>
         <Location />
       </div>
     </main>

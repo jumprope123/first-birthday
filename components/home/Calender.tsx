@@ -5,10 +5,17 @@ const Calender = (): JSX.Element => {
   return (
     <>
       <section className={styles.calenderSection}>
-        <header>April</header>
+        <header>2024년 4월</header>
         <article className={styles.articleCalender}>
           {['월', '화', '수', '목', '금', '토', '일'].map((item) => (
-            <section className={styles.yoil} key={item}>
+            <section
+              className={styles.yoil}
+              key={item}
+              style={{
+                color:
+                  item === '토' ? 'blue' : item === '일' ? 'red' : 'inherit'
+              }}
+            >
               {item}
             </section>
           ))}
