@@ -15,8 +15,8 @@ const notoSansKr = Noto_Sans_KR({
 })
 
 export const metadata: Metadata = {
-  title: '이찬이 돌잔치',
-  description: '신이찬 어린이의 돌잔치에 초대합니다.',
+  title: '이찬이의 첫번째 생일에 초대합니다.',
+  description: '신이찬의 돌잔치에 초대합니다.',
   icons: {
     icon: icon.src
   }
