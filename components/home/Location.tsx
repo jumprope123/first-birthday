@@ -6,6 +6,7 @@ const Location = (): JSX.Element => {
       <KakaoMap />
       <section className={styles.sectionTitle}>
         <h1>서울 금천구 시흥대로 201</h1>
+        <h1>(마벨리에 시흥점)</h1>
         <h2>금천구청역 1호선에서 (도보15분) 이내</h2>
         <div className={styles.explain}>
           <section>
@@ -21,12 +22,11 @@ const Location = (): JSX.Element => {
           <section>
             <h1>🚗자가용 이용시🚗</h1>
             <p className={styles.carDetail}>
-              네비에 서울시 금천구 시흥대로 201 <br />
-              또는 홈플러스 시흥점 검색
+              네비에 서울시 금천구 시흥대로 201
             </p>
-            <p className={styles.carDetail2}>
-              홈플러스 건물 주차장에 주차 후 7층 마벨리에
-            </p>
+            <p className={styles.carDetail2}>또는 홈플러스 시흥점 검색</p>
+            <p className={styles.carDetail3}>홈플러스 건물 주차장에 주차 후</p>
+            <p className={styles.carDetail2}>7층 마벨리에 시흥점</p>
           </section>
         </div>
       </section>

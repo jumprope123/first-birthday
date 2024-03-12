@@ -8,7 +8,7 @@ import Calender from '@/components/home/Calender'
 import HeaderAndImage from '@/components/home/HeaderAndImage'
 import Navigation from '@/components/home/Navigation'
 import Gallery from '@/components/home/Gallery'
-import Location from '@/components/home/Loaction'
+import Location from '@/components/home/Location'
 
 export default function Home(): JSX.Element {
   const [images, setImages] = useState<HTMLImageElement[]>([])
